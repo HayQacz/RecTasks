@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mixing words</title>
+</head>
+<body>
+    <h1>Send a (.txt) file</h1>
+
+    <form method="post" enctype="multipart/form-data">
+
+        {% csrf_token %}
+
+        <label for="file-upload">Choose the file:</label>
+        <input type="file" name="text_file" id="file-upload" accept=".txt" required>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
