@@ -1,0 +1,36 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PESEL Validator</title>
+    <link rel="stylesheet" href="{% static 'peselVal/style.css' %}">
+</head>
+<body>
+    <h1>PESEL Number Validator</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Validate PESEL</button>
+    </form>
+
+    {% if is_valid == True %}
+        <div class="result success">
+            <strong>PESEL is valid!</strong>
+            <ul>
+                <li>Date of Birth: {{ info.date_of_birth|date:"d F Y" }}</li>
+                <li>Gender: {{ info.gender }}</li>
+            </ul>
+        </div>
+    {% elif is_valid == False %}
+        <div class="result error">
+            <strong>PESEL is invalid.</strong>
+        </div>
+    {% endif %}
+
+    <hr>
+
+    <a href="{% url 'form_page' %}" class="btn-link">Go to Task 1</a>
+
+</body>
+</html>

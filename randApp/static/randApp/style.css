@@ -1,0 +1,36 @@
+﻿body {
+    font-family: sans-serif;
+    margin: 2em;
+    line-height: 1.6;
+}
+
+form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+pre {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.btn-link {
+    display: inline-block;
+    padding: 8px 12px;
+    margin-top: 15px;
+    background-color: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.btn-link:hover {
+    background-color: #e0e0e0;
+}

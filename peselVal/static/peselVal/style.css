@@ -1,0 +1,43 @@
+﻿body {
+    font-family: sans-serif;
+    margin: 2em;
+    line-height: 1.6;
+}
+form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+}
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+}
+.success {
+    background-color: #e0f8e0;
+    border: 1px solid #a0c0a0;
+}
+.error {
+    background-color: #f8e0e0;
+    border: 1px solid #c0a0a0;
+}
+.errorslist {
+    color: #D8000C;
+    list-style-type: none;
+    padding: 0;
+}
+.btn-link {
+    display: inline-block;
+    padding: 8px 12px;
+    margin-top: 15px;
+    background-color: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.btn-link:hover {
+    background-color: #e0e0e0;
+}
